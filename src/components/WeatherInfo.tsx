@@ -21,7 +21,6 @@ function WeatherInfo() {
     if (weatherData) {
       const { weather } = weatherData as ApiInterface;
       const nubes = weather[0].main.toLowerCase();
-      console.log(nubes);
       switch (nubes) {
         case "clear":
           setIconComponent(IconSun);

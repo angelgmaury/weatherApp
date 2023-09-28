@@ -11,7 +11,6 @@ function WeatherForm() {
     async (city: string) => {
       try {
         const data = await getData(city);
-        console.log(data);
         setWeatherData(data);
 
         setIs404(data.cod === 200);
